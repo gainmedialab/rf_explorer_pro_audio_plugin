@@ -1,7 +1,12 @@
 {
-  "name": "soundbase-plugin-template",
-  "version": "0.1.12",
-  "description": "Starting point for a SoundBase plugin: a synthetic spectrum analyzer served by the plugin shell.",
+  "name": "soundbase-plugin-rf-explorer-pro-audio",
+  "version": "0.1.0",
+  "description": "SoundBase plugin for the RF Explorer Pro Audio Edition (model 11) spectrum analyzer over USB.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gainmedialab/rf_explorer_pro_audio_plugin.git"
+  },
   "license": "BUSL-1.1",
   "type": "module",
   "main": "main.js",
@@ -20,7 +25,8 @@
   },
   "dependencies": {
     "@soundbase/plugin-contract": "^0.12.2",
-    "@soundbase/plugin-shell": "^0.12.2"
+    "@soundbase/plugin-shell": "^0.12.2",
+    "serialport": "13.0.0"
   },
   "soundbase": {
     "template": {
